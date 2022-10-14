@@ -1,0 +1,21 @@
+<li id="<%= dom_id purchase %>" class="group-list border">
+  <div class="name-div">
+    <strong>Name:</strong>
+    <%= purchase.name %>
+  </div>
+
+  <div class="amount-div">
+    <strong>Amount:</strong>
+    <%= purchase.amount %>
+  </div>
+
+  <%
+=begin%>
+ <div>
+    <strong>User:</strong>
+    <%= purchase.user_id %>
+  </div> 
+<%
+=end%>
+
+ </li>

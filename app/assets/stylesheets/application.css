@@ -13,3 +13,112 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+ *{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+nav{
+    padding-left: 142px
+}
+ a{
+    text-decoration: none;
+ }
+
+ .container{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+       
+ }
+ .groups{
+    max-width: 1200px ;
+    border: 1px solid black
+  }
+   nav{
+    padding: 12px;
+    background-color: rgb(104, 230, 230);
+    display: flex;
+ }
+ .container a{
+    text-decoration: none;
+ }
+ #categories{
+    padding: 0;
+ }
+ .group-list, .trans-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 6px;
+    gap: 2%;
+    align-items: center;
+    margin: 12px 2px;
+}
+.group-list .img{
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.group-list img{
+    width: 100%;
+}
+.mid{
+
+    flex: 3;
+    padding: 6px 6px ;
+    height: 100%;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.3);
+    /* background-color: beige; */
+}
+.footer-btn{
+    text-align: center;
+}
+.footer-btn a{
+    font-size: 34px;
+}
+.name-div, .amount-div{
+    flex: 1;
+    padding: 2rem 0;
+}
+.border{
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+ @media only screen and (max-width: 600px) {
+    .container {
+      /* background-color: lightblue; */
+      /* padding: 0; */
+    }
+    h1{
+        text-align: center;
+    }
+
+    .group-list .img{
+        /* width: 50px; */
+        height: 50px;
+        width: 50px;
+        /* background-color: blue; */
+    }
+    
+
+    .mid{
+        /* background-color: aliceblue; */
+        flex: 3;
+        padding: 6px 6px ;
+        height: 100%;
+        box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.3);
+        /* background-color: beige; */
+    }
+    .mid h3{
+        margin: 0 0 12px;
+       
+    }
+   
+}

@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Purchases</h1>
+
+<ul id="purchases" class="group">
+  <% @purchases.each do |purchase| %>
+    <%= render purchase %>
+    
+  <% end %>
+  <div class='footer-btn'>
+  <%= link_to "add new Transaction", new_group_purchase_path %>
+  </div>
+</ul>

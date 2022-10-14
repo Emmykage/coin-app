@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CoinApp</title>
+    <title>BudgetApp</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+  <header>
+   <nav><h1><a href="/groups">CoinApp<a></h1>
+   <div>
+    <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav> 
+
+</header>
+   
+  <div class="container">
+   <div class="sub-contain">
     <%= yield %>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/4ee8cfcba7.js" crossorigin="anonymous"></script>
   </body>
 </html>

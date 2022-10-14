@@ -1,0 +1,16 @@
+
+<p style="color: green"><%= notice %></p>
+
+<h1>Categories</h1>
+
+<ul id="groups" class="group">
+  <% @groups.each do |group| %>
+    <%= render group %>
+  
+  <% end %>
+<div class='footer-btn'>
+  <%= link_to "add category", new_group_path %>
+  </div>
+</ul>
+
+
